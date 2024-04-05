@@ -1,49 +1,23 @@
-# Grocery Store Management System
+# python_projects_grocery_webapp
+In this python project, we will build a grocery store management application. It will be 3 tier application,
+1. Front end: UI is written in HTML/CSS/Javascript/Bootstrap
+2. Backend: Python and Flask
+3. Database: mysql
 
-Grocery Store Management System (GSMS) is a web application designed to manage products, orders, and other aspects of a grocery store. This system is built using Flask (a Python web framework) for the backend, HTML/CSS/JavaScript for the frontend, and MySQL for the database.
+![](homepage.JPG)
 
-## Features
+### Installation Instructions
 
-- **Manage Products:** Add, update, and delete products with details like name, unit, and price per unit.
-- **View Orders:** Track and view customer orders with details such as date, order number, customer name, and total cost.
-- **User-friendly Interface:** The application provides an intuitive and user-friendly interface for seamless navigation.
+Download mysql for windows: https://dev.mysql.com/downloads/installer/
 
-## Three-Tier Architecture
+`pip install mysql-connector-python`
 
-The three-tier architecture divides the application into three interconnected components, each responsible for specific functionalities. This design enhances modularity, maintainability, and scalability.
+### Exercise 
 
-## 1. Frontend
-The frontend is the user interface layer responsible for interacting with users and presenting data. In the case of GSMS, the frontend is implemented using HTML, CSS, and JavaScript.
+The grocery management system that we built is functional but after we give it to users for use, we got following feedback. The exercise for you to address this feedback and implement these features in the application,
+1. **Products Module**: In products page that lists current products, add an edit button next to delete button that allows to edit current product
+2. **Products Module**: Implement a new form that allows you to add new UOM in the application. For example you want to add **Cubic Meter** as a new UOM as the grocery store decided to start selling **wood** as well. This requies changing backend (python server) and front end (UI) both.
+3. **Orders Module**: When you place an order it doesn't have any validation. For example one can enter an order with empty customer name. You need to add validation for customer name and invalid item name or not specifying a quantity etc. This is only front end UI work.
+4. **Orders Module**: In new order page there is a bug. When you manually change total price of an item it doesn't change the grand total. You need to fix this issue.
+5. **Orders Module**: In the grid where orders are listed, add a view button in the last column. On clicking this button it should show you order details where individual items in that order are listed along with their price/quantity etc.
 
-## Components:
-
-HTML: Defines the structure and layout of the web pages.
-CSS: Styles the HTML elements for a visually appealing presentation.
-JavaScript: Enhances interactivity, handles user input, and communicates with the backend.
-Purpose:
-Display product information, order details, and other user interfaces.
-Send user requests to the backend for processing.
-
-## 2. Backend
-
-The backend is the logic layer that processes user requests, interacts with the database, and manages the application's business logic. GSMS uses Flask, a lightweight Python web framework, for the backend.
-
-## Components:
-
-Flask: Handles HTTP requests, routes, and provides a web server.
-Python: Implements the application's logic, including CRUD (Create, Read, Update, Delete) operations.
-Purpose:
-Receive and process requests from the frontend.
-Query the database for information.
-Return data to the frontend for display.
-
-## 3. Database
-
-The database stores and manages the application's data. GSMS uses MySQL as the relational database management system.
-
-Components:
-MySQL: Manages the creation, retrieval, updating, and deletion of data.
-SQL: Defines the structure of tables, relationships, and constraints.
-Purpose:
-Store information about products, orders, and other relevant data.
-Enable data retrieval for the backend to respond to user requests.
