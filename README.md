@@ -1,4 +1,4 @@
-# Grocery Store Management System    http://127.0.0.1:5500/Grocery-Store-Application-main/ui/manage-product.html 
+# Grocery Store Management System   
 
 Grocery Store Management System (GSMS) is a web application designed to manage products, orders, and other aspects of a grocery store. This system is built using Flask (a Python web framework) for the backend, HTML/CSS/JavaScript for the frontend, and MySQL for the database.
 
